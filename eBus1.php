@@ -14,14 +14,23 @@ $_SESSION['txtTotal'] = $totalValue;
         <style>
             body{
                 Background-color: grey;
-                Background: Linear-gradient(to bottom left,grey,blueviolet)fixed; 
+                Background: Linear-gradient(to bottom left,grey,blueviolet)fixed;
+            }
+            
+            button{
+                button-radius:15px;
+                background-color:White;
+                text-color:Black;
+                text-align:center
             }
         </style>
     </head>
         <body>
         <div class="form">
-            <form name="intCalc" method="post" action="Ebus3.php">
-        <h1>Shop Calculator</h1>    
+            <form name="intCalc" method="post" action="Ebus2.php">
+                <center>
+        <h1>Shop Calculator</h1>
+                </center>
         <hr/>
         <center>
             <table cellspacing="10">
@@ -29,16 +38,16 @@ $_SESSION['txtTotal'] = $totalValue;
                     <td><b>Beverage</b></td> 
                 </tr>
                 <tr>
-                    <td>Coca-Cola</td>
-                    <td><input type="radio" id="CocaCola" name="rdoGroup" value="1" /></td>
+                    <td>Blockchain</td>
+                    <td><input type="radio" id="CocaCola" name="rdoGroup" value="1000" /></td>
                 </tr>
                 <tr>
-                    <td>Sprite</td>
-                    <td><input type="radio" id="Sprite" name="rdoGroup" value="5" /></td>
+                    <td>Autonomous Things</td>
+                    <td><input type="radio" id="Sprite" name="rdoGroup" value="2000" /></td>
                 </tr>
                 <tr>
-                    <td>Fanta</td>
-                    <td><input type="radio" id="Fanta" name="rdoGroup" value="30" /></td>
+                    <td>Immersive Experience</td>
+                    <td><input type="radio" id="Fanta" name="rdoGroup" value="3000" /></td>
                 </tr>
             </table>
         </center>
@@ -54,11 +63,11 @@ $_SESSION['txtTotal'] = $totalValue;
                     <td><input type="text" id="txtSubTot" name="txtSub" readonly /></td>
                 </tr>
                 <tr>
-                    <td>Discount @ 30%</td>
+                    <td>Discount @ 10%</td>
                     <td><input type="text" id="txtDisc" name="txtDisc" readonly /></td>
                 </tr>
                 <tr>
-                    <td>+ VAT @ 40%</td>
+                    <td>+ VAT @ 20%</td>
                     <td><input type="text" id="txtVAT" name="txtVAT" readonly /></td>
                 </tr>
                 <tr>
@@ -70,8 +79,8 @@ $_SESSION['txtTotal'] = $totalValue;
         
         <br />
             <center>
-            <input type="button" name="btnCalc" id="btnCalc" onclick="calcSub()" value="Calculate Amount"/>
-            <input type="button" name="btnClear" id="btnClear" onclick="AmountClear()" value="Clear"/>
+            <input type="button" class="button" name="btnCalc" id="btnCalc" onclick="calcSub()" value="Calculate Amount"/>
+            <input type="button" class="button" name="btnClear" id="btnClear" onclick="AmountClear()" value="Clear"/>
             <input type="submit" name="btnProceed" id="btnProceed" onclick="" value="Proceed"/>
         </center>
             </form>

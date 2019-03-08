@@ -44,15 +44,13 @@ session_start();
 <br/>
 <br/>
 <br/>
-<a href="consulting.html">
+<a href="Consulting.html">
 <button  class="button" type="button">Back to Consulting Services.</button>
 </a>
-<a href="Ebus1.php">
+<a href="eBus1.php">
 <button  class="button" type="button">To purchase another service.</button>
 </a>
 </center>
 </body>
 </html>
 
-<!--onclick= 'window.location.href="Ebus1.php"'
-<!--onclick= 'window.location.href="consulting.html"'

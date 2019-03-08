@@ -32,7 +32,7 @@
 session_start();
     $totalValue = $_POST['txtTotal'];      
     $fullNameValue = $_POST['txtName'];
-    $Email = $_Post['txtEmail'];
+    $Email = $_POST['txtEmail'];
         echo "The name is : ".$fullNameValue.".";
         echo "<br></br>";       
         echo "The total value is $".$totalValue.".";
